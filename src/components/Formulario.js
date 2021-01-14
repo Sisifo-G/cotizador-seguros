@@ -16,11 +16,31 @@ const Select = styled.select `
     width: 100%;
     padding: 1rem;
     border: 1px solid #e1e1e1;
+    border-radius: 5px;
     --webkit-appearance: none;
 `;
 
 const InputRadio = styled.input `
     margin: 0 1rem;
+`;
+
+const Boton = styled.button `
+    background-color: #00838f;
+    font-size: 16px;
+    width: 100%;
+    padding: 1rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    transition: background-color .3s ease;
+    margin-top: 2rem;
+
+    &:hover {
+        background-color: #26c6da;
+        cursor: pointer;
+    }
 `;
 
 const Formulario = () => {
@@ -65,7 +85,7 @@ const Formulario = () => {
                     value="completo"
                 /> Completo
             </Campo>
-            <button type="button">Cotizar</button>
+            <Boton type="button">Cotizar</Boton>
         </form>
     );
 }
